@@ -8,6 +8,8 @@
         
         <h2><strong>Title Project : </strong>{{ $project->title}}</h2>
 
+        <p><strong>Type : </strong> {{ $project->type? $project->type->name : 'No type available'}}</p>
+
         <div class="mt-4 w-50">
             <p>
                 <strong>Description : </strong>{{ $project->description}}

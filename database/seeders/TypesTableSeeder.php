@@ -16,7 +16,7 @@ class TypesTableSeeder extends Seeder
      */
     public function run()
     {
-        $types = ['project-a','project-b','project-c','project-d'];
+        $types = ['type-a','type-b','type-c','type-d'];
 
         foreach ($types as $type) {
             $newType = new Type();
