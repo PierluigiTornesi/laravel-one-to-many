@@ -14,10 +14,10 @@ return new class extends Migration
     public function up()
     {
         Schema::table('projects', function (Blueprint $table) {
-            //inserisco il nuovo campo nella tabella project
+            //new field into the project table
             $table->unsignedBigInteger('type_id')->nullable()->after('id');
 
-            //aggiungo la foreign key al campo inserito
+            //add the foreign key to the entered field
             $table->foreign('type_id')->references('id')->on('types')->nullOnDelete();
         });
     }
